@@ -1,0 +1,45 @@
+.whiteboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.canvas-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px; /* Set your desired width */
+    height: 400px; /* Set your desired height */
+    border: 1px solid #ccc; /* Optional: add a border for better visibility */
+    background-color: #fff; /* Optional: background color */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-picker-button, .clear-button, .eraser-button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.color-picker-button:hover, .clear-button:hover, .eraser-button:hover {
+    background-color: #0056b3;
+}
+
+.eraser-button.active {
+    background-color: #ffcccc; /* Highlight color for active eraser */
+}
